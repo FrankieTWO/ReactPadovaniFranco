@@ -1,0 +1,11 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    
+    
+}
+h1 {
+    color: black;
+    font-family: "Cyberpunk";
+}
