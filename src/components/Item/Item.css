@@ -1,0 +1,16 @@
+.item {
+    background-color: rgb(94, 86, 86);
+    margin: 10px;
+    width: 40%;
+    height: auto;
+  
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    
+}
+p {
+    display: flex;
+    justify-content: center;
+}

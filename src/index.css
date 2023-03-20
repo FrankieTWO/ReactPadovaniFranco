@@ -1,21 +1,11 @@
 body {
   margin: 0;
+  
+  
  
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: url(https://cdna.artstation.com/p/assets/images/images/037/927/712/medium/kevin-otto-koit-arasaka-katana.jpg?1621692757);
+    
   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-h1 {
-  
-    font-family: "Cyberpunk";
-    src:local("Cyberpunk");
-    url:("./fonts/Cyberpunk.ttf") format ("truetype");
-  
 
-}
+

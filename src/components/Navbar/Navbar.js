@@ -4,13 +4,13 @@ import Button from '../Button/Button'
 const Navbar = () => {
     return (
         <nav className="navbar" >
-            <h1>Arasaka Corporation</h1>
+            
+            <h1 className="cyberpunk">Arasaka Corporation</h1>
+            
+            <div><Button/></div>
+            <div><Button/></div>
+            <div><Button/></div>
             <div><CartWidget/></div>
-            
-            <div><Button/></div>
-            <div><Button/></div>
-            <div><Button/></div>
-            
             
         </nav>
     )

@@ -1,5 +1,6 @@
-@font-face {
-  font-family: "Cyberpunk";
-  src:local("Cyberpunk");
-  url:("./fonts/Cyberpunk.ttf") format ("truetype");
+.app {
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/033/902/029/large/jonathan-avidar-render-blurfield.jpg?1610878513);
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-bottom: 12%;
 }
