@@ -3,7 +3,7 @@
     margin: 10px;
     width: 40%;
     height: auto;
-  
+    
 }
 h3 {
     display: flex;
@@ -14,3 +14,11 @@ p {
     display: flex;
     justify-content: center;
 }
+.option {
+    color: Blue;
+    text-decoration: none;
+    margin: 1rem;
+    position: center;
+    border-radius: 1px color red;
+}
+

@@ -16,6 +16,7 @@ h1.cyberpunk {
     font-weight: 200;
     position: relative;
     padding-bottom: 15px;
+    text-decoration: none;
   }
   h1.cyberpunk:before {
     content: "";
