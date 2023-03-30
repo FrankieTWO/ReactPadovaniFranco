@@ -2,23 +2,24 @@
     background-color: rgb(94, 86, 86);
     margin: 10px;
     width: 40%;
-    height: auto;
-    
+    height: auto;    
+}
+.option {
+    margin: 1rem;
+    color: black;
 }
 h3 {
     display: flex;
     justify-content: center;
-    
 }
 p {
     display: flex;
     justify-content: center;
 }
-.option {
-    color: Blue;
-    text-decoration: none;
-    margin: 1rem;
-    position: center;
-    border-radius: 1px color red;
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
 }
 

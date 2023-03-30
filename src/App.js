@@ -12,14 +12,14 @@ function App() {
       <Navbar/>
       <section className="app">
       <Routes>
-      <Route path="/" element ={<ItemListContainer />}/>
+      <Route path="/"/>
       <Route path="/category/:categoryId" element ={<ItemListContainer />}/>  
       <Route path="/item/itemId" element ={<ItemDetailContainer/>}/>
       <Route path="/item/:itemId" element={<ItemDetailContainer />}/>
       </Routes>
       </section>
       </BrowserRouter>
-      <section>
+      <section className="footer">
         <Footer/>
       </section>
     </div>
