@@ -3,8 +3,9 @@ import { useCart } from "../../context/CartContext"
 import { db } from "../services/firebase/firebaseConfig"
 import { useState } from 'react'
 import { useNotification } from "../../notification/NotificationService"
-
+import './Checkout.css'
 import { useNavigate } from "react-router-dom"
+
 
 const Checkout = () => {
     const [orderId, setOrderId] = useState('')
@@ -19,12 +20,7 @@ const Checkout = () => {
         try {
             setLoading(true)
             const objOrder = {
-                // buyer: userData
-                buyer: {
-                    name: 'Sebastian Zuviria',
-                    phone: '123456789',
-                    email: 'contact@sebaz.io'
-                },
+                buyer: userData,
                 items: cart,
                 total
             }
@@ -93,11 +89,13 @@ const Checkout = () => {
     }
 
     return (
-        <div>
+        <div className="parent">
+        <div className="checkout">
             <h1>Checkout</h1>
             <h2>Ingrese sus datos</h2>
             {/* <Form onConfirm={createOrder}/> */}
             <button onClick={createOrder}>Crear orden</button>
+        </div>
         </div>
     )
 }
