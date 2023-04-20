@@ -1,7 +1,7 @@
 .app {
     background-image: url(https://cdnb.artstation.com/p/assets/images/images/033/902/029/large/jonathan-avidar-render-blurfield.jpg?1610878513);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 55%;
+    min-height: 82vh;
     
 }

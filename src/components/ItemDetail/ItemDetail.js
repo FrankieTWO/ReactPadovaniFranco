@@ -1,13 +1,19 @@
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
+import { Link } from 'react-router-dom'
+import { useCart } from '../../context/CartContext'
+import { useNotification } from '../../notification/NotificationService'
 
 const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
     
+    const { addItem, isInCart } = useCart()
+    const { setNotification } = useNotification()
     const handleOnAdd = (quantity) => {
         const productToAdd = {
             id, name, price, quantity
         }
-        console.log(productToAdd)
+        addItem(productToAdd)
+        setNotification('success', `Succesfully added ${quantity} ${name}`)
     }
 
     return (
@@ -22,17 +28,23 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
             </picture>
             <section>
                 <p className="Info">
-                    Categoria: {category}
+                    Category: {category}
                 </p>
                 <p className="Info">
-                    Descripción: {description}
+                    Description: {description}
                 </p>
                 <p className="Info">
-                    Precio: {price}
+                    Price: {price}
                 </p>
             </section>           
             <footer className='ItemFooter'>
-                <ItemCount onAdd={handleOnAdd} stock={stock} />
+            {
+                    isInCart(id) ? (
+                        <Link to='/cart'>Terminar compra</Link>
+                    ) : (
+                        <ItemCount onAdd={handleOnAdd} stock={stock} />
+                    )
+                }
             </footer>
         </article>
     )

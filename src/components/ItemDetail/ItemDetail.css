@@ -21,7 +21,7 @@
 }
 
 .Info {
-    font-size: 12px;
+    font-size: 20px;
     display: flex;
     justify-content: space-around;
 }
@@ -52,4 +52,5 @@
     height: 100px;
     object-fit: cover;
     object-position: center;
+    padding-left: 40%;
 }
