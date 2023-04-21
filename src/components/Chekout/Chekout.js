@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useNotification } from "../../notification/NotificationService"
 import './Checkout.css'
 import { useNavigate } from "react-router-dom"
-
+import ContactForm from '../ContactForm/ContactForm'
 
 const Checkout = () => {
     const [orderId, setOrderId] = useState('')
@@ -57,6 +57,7 @@ const Checkout = () => {
                 
                 clearCart()
                 setOrderId(orderAdded.id)
+                console.log(orderAdded.id)
 
                 setTimeout(() => {
                     navigate('/')
@@ -66,12 +67,10 @@ const Checkout = () => {
             }
         } catch (error) {
             setNotification('error', 'Hubo un error generando la orden', 10)
-        } finally {
+        }  finally {
             setLoading(false)
-        }
-        
+        } 
     }
-
     if(loading) {
         return (
             <div>
@@ -79,7 +78,6 @@ const Checkout = () => {
             </div>
         )
     }
-
     if(orderId) {
         return (
             <div>
@@ -87,14 +85,12 @@ const Checkout = () => {
             </div>
         )
     }
-
     return (
         <div className="parent">
         <div className="checkout">
             <h1>Checkout</h1>
             <h2>Ingrese sus datos</h2>
-            {/* <Form onConfirm={createOrder}/> */}
-            <button onClick={createOrder}>Crear orden</button>
+            { <ContactForm onConfirm={createOrder}/>}
         </div>
         </div>
     )

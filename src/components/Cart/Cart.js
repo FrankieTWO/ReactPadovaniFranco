@@ -12,7 +12,7 @@ const Cart = () => {
                 {
                     cart.map(prod => {
                         return (
-                            <div key={prod.id} >
+                            <div key={prod.id}>
                                 <h2>{prod.name}</h2>
                                 <h2>Cantidad: {prod.quantity}</h2>
                                 <h2>${prod.price} x Unidad</h2>
