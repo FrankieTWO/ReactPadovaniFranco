@@ -57,7 +57,7 @@ const Checkout = () => {
                 
                 clearCart()
                 setOrderId(orderAdded.id)
-                console.log(orderAdded.id)
+                
 
                 setTimeout(() => {
                     navigate('/')
@@ -67,6 +67,7 @@ const Checkout = () => {
             }
         } catch (error) {
             setNotification('error', 'Hubo un error generando la orden', 10)
+            console.log(orderId)
         }  finally {
             setLoading(false)
         } 
