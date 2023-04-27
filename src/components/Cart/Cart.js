@@ -6,13 +6,13 @@ const Cart = () => {
 
     return (
         <div className="cart">
-            <h1>Cart View</h1>
-            <button onClick={() => clearCart()}>Vaciar carrito</button>
+            <h1>Your Purchases</h1>
+            
             <div>
                 {
                     cart.map(prod => {
                         return (
-                            <div key={prod.id}>
+                            <div key={prod.id} className="onCart">
                                 <h2>{prod.name}</h2>
                                 <h2>Cantidad: {prod.quantity}</h2>
                                 <h2>${prod.price} x Unidad</h2>
@@ -22,9 +22,9 @@ const Cart = () => {
                     })
                 }
             </div>
-
+            <button className="botonVaciar" onClick={() => clearCart()}>Vaciar carrito</button>
             <h1>Total de la compra ${total}</h1>
-            <Link to='/checkout' className="btnchk">Checkout</Link>
+            <button><Link to='/checkout' className="btnchk">Checkout</Link></button>
         </div>
     )
 }
