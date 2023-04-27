@@ -1,4 +1,4 @@
-# Final project for React Js for CODERHOUSE course.
+#E-commerce in React JS for CODERHOUSE.
 
 This project is deployed Using Vercel , here´s a direct link : [Arasaka Corporation Ecommerce](https://react-padovani-franco-39610.vercel.app/).
 
