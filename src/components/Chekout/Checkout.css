@@ -1,7 +1,7 @@
 .parent {
     text-align: center;
     height: 400px;
-    background: gray;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
   
   
   .checkout {
-    background-color: orange;
+    background-color: grey;
     width: 400px;
     height: 100px;
   }

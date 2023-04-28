@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import './ContactForm.css';
 
 const ContactForm = ({onConfirm}) => {
     const [name, setName] = useState("")
@@ -17,7 +18,8 @@ const ContactForm = ({onConfirm}) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className=''>
+    
+    <form onSubmit={handleSubmit} className='form'>
         <input type='text' className='' value={name} onChange={(e)=> setName(e.target.value)} placeholder='Ingrese su Nombre' required/>
         <input type='tel' className='' value={phone} onChange={(e)=> setPhone(e.target.value)} placeholder='Ingrese su Nro Telefono' required/>
         <input type='email' className='' value={email} onChange={(e)=> setEmail(e.target.value)} placeholder='Ingrese su e-mail' required/>

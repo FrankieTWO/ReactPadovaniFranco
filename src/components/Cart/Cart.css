@@ -3,27 +3,27 @@
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 .onCart {
-    border : 2px solid black
+    border : 2px solid black;
+    width: 100%;
 }
 .btnchk {
-    /* width: 150px;
+    width: 150px;
     height: 60px; 
     border: 1;
-    outline:#ff003c;
-    background-color: var(--yellow-color);
-    cursor: pointer;
-    position: relative;
     
+    
+    
+    font-family: Tomorrow, sans-serif;
     font-size: .85rem;
     text-transform: uppercase;
     color: var(--black-color);
-    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);  */
-    font-family: Tomorrow, sans-serif;
+     
 }
 .botonVaciar {
+    align-self: center;
     width: 150px;
     height: 60px; 
     border: 1;
@@ -36,4 +36,5 @@
     text-transform: uppercase;
     color: var(--black-color);
     clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);   
-}    
+}   
+
